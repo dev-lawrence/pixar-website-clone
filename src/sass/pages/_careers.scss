@@ -1,0 +1,117 @@
+@use '../abstracts' as *;
+
+.careers {
+  position: relative;
+  min-height: 60vh;
+
+  .bg-img {
+    position: relative;
+    min-height: 60vh;
+    background: $black url(../assets/img/careers.jpg);
+    @include image-property(initial);
+    width: 100%;
+
+    @include medium {
+      min-height: 100vh;
+    }
+  }
+
+  .bg-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    @include flex(center, center);
+    color: $white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 4px;
+
+    @include medium {
+      font-size: 3.188rem;
+      letter-spacing: 6px;
+    }
+  }
+
+  .collaboration {
+    padding: 4rem;
+    max-width: 800px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    text-align: center;
+
+    @include medium {
+      padding-top: 8.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      text-transform: uppercase;
+      line-height: 1.3;
+      color: $primary-clr;
+      font-weight: 400;
+      margin-bottom: 1.438rem;
+
+      @include medium {
+        font-size: 2.438rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: rgba(29, 29, 29, 0.7);
+      margin-bottom: 2rem;
+
+      @include medium {
+        font-size: 1.25rem;
+      }
+    }
+
+    .btn {
+      text-transform: uppercase;
+      border: 2px solid $primary-clr;
+      background-color: transparent;
+      color: $primary-clr;
+      padding: 1rem 2.125rem;
+      margin: 2rem 0;
+      letter-spacing: 2px;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: $primary-clr;
+        color: $white;
+      }
+    }
+  }
+
+  @include extra-large {
+    hr {
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+
+  .image-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @include medium {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .slide-img {
+      height: 220px;
+    }
+
+    .slide-img img {
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}

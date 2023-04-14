@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+#header-section {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: $white;
+
+  .logo {
+    img {
+      width: 85px;
+
+      @include extra-large {
+        width: 120px;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    padding: 1rem 0;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .d-flex {
+    @include flex(center, space-between);
+    position: relative;
+  }
+
+  &.showBg {
+    background-color: $white;
+    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+  }
+}

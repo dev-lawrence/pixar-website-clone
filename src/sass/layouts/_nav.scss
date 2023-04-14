@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.toggle-menu {
+  font-size: $font-sz-400;
+  cursor: pointer;
+  z-index: 100;
+}
+
+//NAV MENU
+.nav {
+  @include flex(center, flex-start);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  transform: translateX(-81.25rem);
+  transition: transform 0.6s ease-in-out;
+
+  // show menu
+  &.showMenu {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+  background-color: $white;
+  height: 100vh;
+  width: 90%;
+  padding: 2rem 2rem 1.625rem;
+
+  @include small {
+    width: 70%;
+  }
+
+  li {
+    text-transform: capitalize;
+    margin-bottom: 0.773rem;
+  }
+
+  a {
+    color: $black;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: color 0.2s ease-in-out;
+    font-weight: 300;
+  }
+}
