@@ -1,15 +1,79 @@
 import { useState } from 'react';
 import { GalleryImages } from './GalleryImages';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCircleXmark,
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const ImageSlider = () => {
-  const [clickedImg, setClickedImg] = useState(null);
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+  const length = GalleryImages.length;
+
+  const handleOpenModal = (index) => {
+    setSlideIndex(index);
+    setOpenModal(!openModal);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(!openModal);
+  };
+
+  const handleNextImg = () => {
+    slideIndex === length - 1
+      ? setSlideIndex(0)
+      : setSlideIndex(slideIndex + 1);
+  };
+
+  const handlePrevImg = () => {
+    slideIndex === 0
+      ? setSlideIndex(length - 1)
+      : setSlideIndex(slideIndex - 1);
+  };
 
   return (
     <>
+      {openModal && (document.body.style.overflow = 'hidden')}
+
+      {openModal && (
+        <div className="modal">
+          <div className="modal-icons">
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className="close-btn"
+              onClick={handleCloseModal}
+            />
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              className="left-btn"
+              onClick={handlePrevImg}
+            />
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="right-btn"
+              onClick={handleNextImg}
+            />
+          </div>
+
+          <div className="full-img">
+            <img
+              src={GalleryImages[slideIndex].src}
+              alt={GalleryImages[slideIndex].text}
+            />
+          </div>
+          <div className="modal-overlay"></div>
+        </div>
+      )}
       <div className="image-slider">
         {GalleryImages.map((image, index) => {
           return (
-            <div key={index} className="slide-img">
+            <div
+              key={index}
+              className="slide-img"
+              onClick={() => handleOpenModal(index)}
+            >
               <img src={image.src} alt={image.text} />
             </div>
           );

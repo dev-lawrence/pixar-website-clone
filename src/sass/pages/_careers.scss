@@ -2,7 +2,6 @@
 
 .careers {
   position: relative;
-  min-height: 60vh;
 
   .bg-img {
     position: relative;
@@ -112,6 +111,63 @@
       height: 100%;
       object-fit: cover;
       cursor: pointer;
+    }
+  }
+
+  .modal {
+    height: 100vh;
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      @include flex(center, center);
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 800;
+    }
+
+    .close-btn {
+      position: fixed;
+      top: 2.5rem;
+      right: 1rem;
+      font-size: 2rem;
+      z-index: 840;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .left-btn,
+    .right-btn {
+      position: fixed;
+      top: 50%;
+      font-size: 1.5rem;
+      transform: translateY(-50%);
+      z-index: 1000;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .left-btn {
+      left: 2rem;
+    }
+
+    .right-btn {
+      right: 2rem;
+    }
+
+    .full-img img {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 0.4rem;
+      width: 100%;
+      max-width: 1000px;
+      z-index: 999;
+      user-select: none;
+      opacity: 0.9;
+      pointer-events: none;
     }
   }
 }

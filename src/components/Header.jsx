@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Logo from '../assets/img/logo.jpg';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   const [click, setClick] = useState(false);
 
@@ -21,9 +22,11 @@ const Header = () => {
 
             {/* <!--NAV TOGGLE BUTTON--> */}
             <div onClick={handleClick} className="toggle-menu">
-              <i
-                className={click ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}
-              ></i>
+              {click ? (
+                <FontAwesomeIcon icon={faXmark} />
+              ) : (
+                <FontAwesomeIcon icon={faBars} />
+              )}
             </div>
 
             {/* <!--NAV MENU--> */}
