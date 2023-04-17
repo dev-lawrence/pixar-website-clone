@@ -11,7 +11,12 @@ const Cards = () => {
         text="careers at pixar"
         path="careers-at-pixar"
       />
-      <Card CardImg={ElementalImg} text="elemental trailer" path="trailer" />
+      <Card
+        CardImg={ElementalImg}
+        text="elemental trailer"
+        path="https://www.youtube.com/watch?v=hXzcyx9V0xw"
+        target="target"
+      />
       <Card CardImg={WinLoseImg} text="win or lose" path="winlose" />
     </div>
   );

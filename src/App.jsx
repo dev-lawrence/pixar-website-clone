@@ -9,7 +9,6 @@ import {
 import Home from './pages/Home';
 import Feature from './pages/Feature';
 import Careers from './pages/Careers';
-import Trailer from './pages/Trailer';
 import WinLose from './pages/WinLose';
 
 // styles
@@ -24,7 +23,6 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="feature" element={<Feature />} />
       <Route path="careers-at-pixar" element={<Careers />} />
-      <Route path="trailer" element={<Trailer />} />
       <Route path="winlose" element={<WinLose />} />
     </Route>
   )
