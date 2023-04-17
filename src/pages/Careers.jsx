@@ -1,5 +1,8 @@
+import Accordion from '../components/Accordion';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ImageSlider from '../components/ImageSlider';
+import FollowImg from '../assets/img/follow.jpg';
 
 const Careers = () => {
   return (
@@ -33,7 +36,22 @@ const Careers = () => {
         <div className="container">
           <ImageSlider />
         </div>
+
+        <div className="career-faqs">
+          <div className="bg-img">
+            <h1 className="bg-text">career faqs</h1>
+          </div>
+
+          <div className="container">
+            <Accordion />
+
+            <a href="https://twitter.com/PixarRecruiting" className="follow">
+              <img src={FollowImg} alt="" />
+            </a>
+          </div>
+        </div>
       </section>
+      <Footer />
     </>
   );
 };

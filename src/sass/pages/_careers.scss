@@ -95,9 +95,8 @@
   }
 
   .image-slider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    @include grid(repeat(2, 1fr), 1rem);
+    margin-bottom: 6rem;
 
     @include medium {
       grid-template-columns: repeat(3, 1fr);
@@ -168,6 +167,93 @@
       user-select: none;
       opacity: 0.9;
       pointer-events: none;
+    }
+  }
+
+  .career-faqs {
+    .bg-img {
+      position: relative;
+      min-height: 30vh;
+      background: $black url(../assets/img/faq.jpg);
+      @include image-property(initial);
+      width: 100%;
+      margin-bottom: 6rem;
+
+      @include medium {
+        min-height: 70vh;
+
+        margin-bottom: 8rem;
+      }
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 55%;
+      left: 10rem;
+      transform: translate(-50%, -55%);
+      @include flex(center, center);
+      color: $white;
+      text-transform: uppercase;
+      font-size: 2rem;
+      width: 100%;
+      letter-spacing: 4px;
+
+      @include medium {
+        font-size: 3.188rem;
+        letter-spacing: 6px;
+        left: 50%;
+      }
+    }
+
+    .faq {
+      background-color: #e6e6e6;
+      margin-bottom: 1rem;
+      padding: 1.5rem 1rem;
+      border-radius: 0.3rem;
+      max-width: 700px;
+      margin-inline: auto;
+
+      .title {
+        @include flex(center, space-between);
+
+        .icon {
+          font-size: 1.1rem;
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 800;
+
+        @include medium {
+          font-size: 1.375rem;
+        }
+      }
+
+      .content {
+        padding-top: 1rem;
+        color: $light-clr;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+
+        &.show {
+          height: auto;
+          max-height: 999px;
+          transition: all 0.4s cubic-bezier(1, 0, 1, 0);
+        }
+      }
+    }
+  }
+
+  .follow {
+    margin-top: 5rem;
+
+    @include medium {
+      @include flex(center, center);
+      img {
+        max-width: 300px;
+      }
     }
   }
 }

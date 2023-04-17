@@ -33,10 +33,12 @@ const ImageSlider = () => {
       : setSlideIndex(slideIndex - 1);
   };
 
+  openModal
+    ? (document.body.style.overflow = 'hidden')
+    : (document.body.style.overflow = 'auto');
+
   return (
     <>
-      {openModal && (document.body.style.overflow = 'hidden')}
-
       {openModal && (
         <div className="modal">
           <div className="modal-icons">
