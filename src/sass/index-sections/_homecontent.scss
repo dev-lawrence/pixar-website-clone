@@ -1,12 +1,6 @@
 @use '../abstracts' as *;
 
 .home-content {
-  padding-top: 4rem;
-
-  @include medium {
-    padding-top: 7.5rem;
-  }
-
   .cards {
     @include medium {
       @include flex(center, space-between);

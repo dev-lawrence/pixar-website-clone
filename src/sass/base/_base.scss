@@ -7,6 +7,25 @@ body {
   font-size: 1.1rem;
 }
 
+// Bg-text style for all hero images
+.bg-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  @include flex(center, center);
+  color: $white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: 4px;
+
+  @include medium {
+    font-size: 3.188rem;
+    letter-spacing: 6px;
+  }
+}
+
 .container {
   padding: 0rem 1.25rem;
 

@@ -8,9 +8,11 @@
   background-repeat: no-repeat;
   width: 100%;
   min-height: 60vh;
+  margin-bottom: 5rem;
 
   @include medium {
     min-height: 100vh;
+    margin-bottom: 7.5rem;
   }
 
   .content {

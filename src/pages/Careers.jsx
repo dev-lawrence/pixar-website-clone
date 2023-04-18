@@ -3,15 +3,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ImageSlider from '../components/ImageSlider';
 import FollowImg from '../assets/img/follow.jpg';
+import Hero from '../components/Hero';
 
 const Careers = () => {
   return (
     <>
       <Header />
       <section className="careers">
-        <div className="bg-img">
-          <h1 className="bg-text">careers at pixar</h1>
-        </div>
+        <Hero text="careers at pixar" />
 
         <div className="collaboration">
           <h2>a collaboration between art & technology</h2>
