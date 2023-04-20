@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.dropdown-menu {
+  position: absolute;
+  top: 3rem;
+  left: 16rem;
+  background-color: $primary-clr;
+  padding: 1rem 0;
+  padding-right: 1.5rem;
+
+  li:not(:last-child) {
+    margin-bottom: 0.3rem;
+  }
+
+  a {
+    color: $white;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &.clicked {
+    display: none;
+  }
+}

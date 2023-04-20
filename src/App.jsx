@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Feature from './pages/Feature';
 import Careers from './pages/Careers';
 import WinLose from './pages/WinLose';
+import Shortfilms from './pages/Shortfilms';
 
 // styles
 import './sass/main.scss';
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="feature" element={<Feature />} />
       <Route path="careers-at-pixar" element={<Careers />} />
       <Route path="winlose" element={<WinLose />} />
+      <Route path="shortfilms" element={<Shortfilms />} />
     </Route>
   )
 );
