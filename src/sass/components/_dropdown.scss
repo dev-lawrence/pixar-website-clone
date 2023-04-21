@@ -1,9 +1,12 @@
 @use '../abstracts' as *;
 
-.dropdown-menu {
+.menu-short,
+.menu-tech,
+.menu-careers,
+.menu-extra,
+.menu-about {
   position: absolute;
-  top: 3rem;
-  left: 16rem;
+  width: 300px;
   background-color: $primary-clr;
   padding: 1rem 0;
   padding-right: 1.5rem;
@@ -26,3 +29,12 @@
     display: none;
   }
 }
+
+// .menu-short {
+//   top: 3rem;
+//   left: 16rem;
+// }
+
+// .menu-tech {
+//   left: 27rem;
+// }

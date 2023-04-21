@@ -1,48 +1,49 @@
 import { NavLink } from 'react-router-dom';
-import Dropdown from './Dropdown';
+import NavLinks from './NavLinks';
 
-const Navbar = ({ click, dropdown, setDropdown }) => {
-  const onMouseEnter = () => {
-    if (window.innerWidth < 1200) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
+const Navbar = ({ click, setDropdown, dropdown }) => {
+  // const handleMouseEnter = () => {
+  //   if (window.innerWidth < 1200) {
+  //     setDropdown(false);
+  //   } else {
+  //     setDropdown(true);
+  //   }
+  // };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 1200) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
+  // const handleMouseLeave = () => {
+  //   if (window.innerWidth < 1200) {
+  //     setDropdown(false);
+  //   } else {
+  //     setDropdown(false);
+  //   }
+  // };
 
   return (
     <>
       <nav className={`nav ${click ? 'showMenu' : ''}`}>
-        <div className="menu">
+        <ul className="menu">
           <li>
             <NavLink to="/feature">feature films</NavLink>
           </li>
-          <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          <NavLinks setDropdown={setDropdown} dropdown={dropdown} />
+          {/* <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <NavLink to="/shortfilms">short films</NavLink>
             {dropdown && <Dropdown />}
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="./event.html">technology</a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="./about.html">careers</a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="./contact.html">extras</a>
-          </li>
+          </li> */}
 
-          <li>
+          {/* <li>
             <a href="./contact.html">about</a>
-          </li>
-        </div>
+          </li> */}
+        </ul>
       </nav>
     </>
   );

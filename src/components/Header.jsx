@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => {
     setClick((prevClick) => !prevClick);
@@ -31,11 +30,7 @@ const Header = () => {
             </div>
 
             {/* <!--NAV MENU--> */}
-            <Navbar
-              click={click}
-              dropdown={dropdown}
-              setDropdown={setDropdown}
-            />
+            <Navbar click={click} />
           </div>
         </div>
       </header>
