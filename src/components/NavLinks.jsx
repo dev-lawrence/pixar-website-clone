@@ -7,7 +7,11 @@ const NavLinks = () => {
   const [click, setClick] = useState(false);
 
   const handleMenuEnter = (index) => {
-    setActiveMenuIndex(index);
+    if (window.innerWidth < 1200) {
+      setActiveMenuIndex(null);
+    } else {
+      setActiveMenuIndex(index);
+    }
   };
 
   const handleMenuLeave = () => {
@@ -17,22 +21,6 @@ const NavLinks = () => {
   const handleClick = () => {
     setClick(!click);
   };
-
-  //   const onMouseEnter = () => {
-  //     if (window.innerWidth < 1200) {
-  //       setDropdown(false);
-  //     } else {
-  //       setDropdown(true);
-  //     }
-  //   };
-
-  //   const onMouseLeave = () => {
-  //     if (window.innerWidth < 1200) {
-  //       setDropdown(false);
-  //     } else {
-  //       setDropdown(false);
-  //     }
-  //   };
 
   return (
     <>

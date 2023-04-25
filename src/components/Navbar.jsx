@@ -1,23 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import NavLinks from './NavLinks';
 
-const Navbar = ({ click, setDropdown, dropdown }) => {
-  // const handleMouseEnter = () => {
-  //   if (window.innerWidth < 1200) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(true);
-  //   }
-  // };
-
-  // const handleMouseLeave = () => {
-  //   if (window.innerWidth < 1200) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(false);
-  //   }
-  // };
-
+const Navbar = ({ click }) => {
   return (
     <>
       <nav className={`nav ${click ? 'showMenu' : ''}`}>
@@ -25,7 +9,7 @@ const Navbar = ({ click, setDropdown, dropdown }) => {
           <li>
             <NavLink to="/feature">feature films</NavLink>
           </li>
-          <NavLinks setDropdown={setDropdown} dropdown={dropdown} />
+          <NavLinks />
           {/* <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <NavLink to="/shortfilms">short films</NavLink>
             {dropdown && <Dropdown />}

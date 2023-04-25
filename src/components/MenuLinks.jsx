@@ -6,37 +6,37 @@ export const MenuLinks = [
     subMenus: [
       {
         title: 'theatrical shorts',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
 
       {
         title: ' disney+',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
 
       {
         title: 'sparkshorts',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
 
       {
         title: 'cars toons',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
 
       {
         title: 'toy story toons',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
 
       {
         title: 'home entertainment',
-        path: '/theatrical',
+        path: '/shortfilms',
         cName: 'dropdown-link',
       },
     ],
@@ -49,19 +49,19 @@ export const MenuLinks = [
     subMenus: [
       {
         title: 'renderman',
-        path: '/theatrical',
+        path: '/technology',
         cName: 'dropdown-link',
       },
 
       {
         title: 'usd',
-        path: '/theatrical',
+        path: '/technology',
         cName: 'dropdown-link',
       },
 
       {
         title: 'research and open source',
-        path: '/theatrical',
+        path: '/technology',
         cName: 'dropdown-link',
       },
     ],
@@ -75,25 +75,25 @@ export const MenuLinks = [
     subMenus: [
       {
         title: 'career at pixar',
-        path: '/theatrical',
+        path: '/careers',
         cName: 'dropdown-link',
       },
 
       {
         title: 'internship',
-        path: '/theatrical',
+        path: '/care',
         cName: 'dropdown-link',
       },
 
       {
         title: 'life at pixar',
-        path: '/theatrical',
+        path: '/care',
         cName: 'dropdown-link',
       },
 
       {
         title: 'events',
-        path: '/theatrical',
+        path: '/care',
         cName: 'dropdown-link',
       },
     ],
@@ -107,25 +107,25 @@ export const MenuLinks = [
     subMenus: [
       {
         title: 'art exhibition',
-        path: '/theatrical',
+        path: '/extras',
         cName: 'dropdown-link',
       },
 
       {
         title: 'emotions at play',
-        path: '/theatrical',
+        path: '/extras',
         cName: 'dropdown-link',
       },
 
       {
         title: 'the science behind pixar',
-        path: '/theatrical',
+        path: '/extras',
         cName: 'dropdown-link',
       },
 
       {
         title: 'pixar in a box',
-        path: '/theatrical',
+        path: '/extras',
         cName: 'dropdown-link',
       },
     ],
@@ -138,43 +138,43 @@ export const MenuLinks = [
     subMenus: [
       {
         title: 'contact us',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'leadership',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'inclusion & outreach',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'supplier diversity',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'coming soon',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'our story',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
 
       {
         title: 'company faqs"s ',
-        path: '/theatrical',
+        path: '/about',
         cName: 'dropdown-link',
       },
     ],
