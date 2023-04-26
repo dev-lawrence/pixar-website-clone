@@ -1,9 +1,9 @@
 import Accordion from '../components/Accordion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ImageSlider from '../components/ImageSlider';
 import FollowImg from '../assets/img/follow.jpg';
 import Hero from '../components/Hero';
+import ImageSlider from '../components/ImageSlider';
 
 const Careers = () => {
   return (
