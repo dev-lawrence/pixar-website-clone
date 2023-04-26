@@ -15,40 +15,16 @@
     }
   }
 
-  &-movies {
-    padding-top: 5rem;
-    @include grid(repeat(2, 1fr), 3rem);
-    text-align: center;
+  .movie {
+    img {
+      width: 140px;
+      height: 197px;
+      object-fit: cover;
+      cursor: pointer;
 
-    @include medium {
-      padding-top: 7.5rem;
-
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .movie {
-      img {
-        width: 140px;
-        height: 197px;
-        object-fit: cover;
-        cursor: pointer;
-
-        @include medium {
-          width: 203px;
-          height: 295px;
-        }
-      }
-
-      h4 {
-        color: $light-clr;
-        text-transform: capitalize;
-        font-size: 0.7rem;
-        font-weight: 300;
-        padding-top: 0.3rem;
-
-        @include medium {
-          font-size: 0.9rem;
-        }
+      @include medium {
+        width: 203px;
+        height: 295px;
       }
     }
   }

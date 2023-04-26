@@ -26,6 +26,41 @@ body {
   }
 }
 
+@include extra-large {
+  hr {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+
+// styles for features and shortfilms section
+.feature-movies,
+.shortfilms-movies {
+  padding-top: 5rem;
+  @include grid(repeat(2, 1fr), 3rem);
+  text-align: center;
+
+  @include medium {
+    padding-top: 7.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .movie {
+    h4 {
+      color: $light-clr;
+      text-transform: capitalize;
+      font-size: 0.7rem;
+      font-weight: 300;
+      padding-top: 0.3rem;
+
+      @include medium {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
 .container {
   padding: 0rem 1.25rem;
 

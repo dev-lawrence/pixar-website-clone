@@ -69,13 +69,6 @@
     }
   }
 
-  @include extra-large {
-    hr {
-      width: 100px;
-      margin: 0 auto;
-    }
-  }
-
   .image-slider {
     @include grid(repeat(2, 1fr), 1rem);
     margin-bottom: 6rem;

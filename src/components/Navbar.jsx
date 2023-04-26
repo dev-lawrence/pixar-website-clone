@@ -10,23 +10,6 @@ const Navbar = ({ click }) => {
             <NavLink to="/feature">feature films</NavLink>
           </li>
           <NavLinks />
-          {/* <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            <NavLink to="/shortfilms">short films</NavLink>
-            {dropdown && <Dropdown />}
-          </li> */}
-          {/* <li>
-            <a href="./event.html">technology</a>
-          </li> */}
-          {/* <li>
-            <a href="./about.html">careers</a>
-          </li> */}
-          {/* <li>
-            <a href="./contact.html">extras</a>
-          </li> */}
-
-          {/* <li>
-            <a href="./contact.html">about</a>
-          </li> */}
         </ul>
       </nav>
     </>

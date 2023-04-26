@@ -69,31 +69,31 @@ export const MenuLinks = [
 
   {
     name: 'careers',
-    path: '/careers',
+    path: '/careers-at-pixar',
     cName: 'menu-careers',
 
     subMenus: [
       {
         title: 'career at pixar',
-        path: '/careers',
+        path: '/careers-at-pixar',
         cName: 'dropdown-link',
       },
 
       {
         title: 'internship',
-        path: '/care',
+        path: '/career',
         cName: 'dropdown-link',
       },
 
       {
         title: 'life at pixar',
-        path: '/care',
+        path: '/career',
         cName: 'dropdown-link',
       },
 
       {
         title: 'events',
-        path: '/care',
+        path: '/career',
         cName: 'dropdown-link',
       },
     ],
