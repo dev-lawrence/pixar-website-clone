@@ -26,7 +26,7 @@
     position: relative;
     transform: translateX(0);
     height: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow: visible;
   }
 
@@ -43,9 +43,10 @@
   padding: 2rem 2rem 1.625rem;
 
   @include extra-large {
-    height: 10vh;
+    height: 100%;
+    width: 100%;
     @include flex(center, flex-end);
-    padding: 0;
+    padding: 1rem 0;
   }
 
   @include small {
@@ -71,7 +72,7 @@
 
     @include extra-large {
       text-transform: uppercase;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 400;
       letter-spacing: 1px;
     }

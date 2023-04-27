@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CareerGalleryImages } from './CareerGalleryImages';
+import { ExtraGalleryImages } from './ExtraGalleryImages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleXmark,
@@ -7,10 +7,10 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-const ImageSlider = () => {
+const ExtraSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [openModal, setOpenModal] = useState(false);
-  const length = CareerGalleryImages.length;
+  const length = ExtraGalleryImages.length;
 
   const handleOpenModal = (index) => {
     setSlideIndex(index);
@@ -61,15 +61,15 @@ const ImageSlider = () => {
 
           <div className="full-img">
             <img
-              src={CareerGalleryImages[slideIndex].src}
-              alt={CareerGalleryImages[slideIndex].text}
+              src={ExtraGalleryImages[slideIndex].src}
+              alt={ExtraGalleryImages[slideIndex].text}
             />
           </div>
           <div className="modal-overlay"></div>
         </div>
       )}
       <div className="image-slider">
-        {CareerGalleryImages.map((image, index) => {
+        {ExtraGalleryImages.map((image, index) => {
           return (
             <div
               key={index}
@@ -85,4 +85,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default ExtraSlider;

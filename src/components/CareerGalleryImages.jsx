@@ -5,7 +5,7 @@ import Slide4 from '../assets/img/slide4.jpg';
 import Slide5 from '../assets/img/slide5.jpg';
 import Slide6 from '../assets/img/slide6.jpg';
 
-export const GalleryImages = [
+export const CareerGalleryImages = [
   {
     src: Slide1,
     text: 'A lady talking',
