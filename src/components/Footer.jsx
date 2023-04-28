@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="copyright">
           <p>© 1986-2023 disney / pixar</p>
         </div>
-        <button className="btn">
+        <button className="footer-btn">
           Do Not Sell or Share My Personal Information
         </button>
       </section>

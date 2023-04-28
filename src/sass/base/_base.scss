@@ -4,7 +4,7 @@ body {
   background-color: $bg-clr;
   font-family: $primary-font;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 // Bg-text style for all hero images
@@ -34,8 +34,7 @@ body {
 }
 
 // Button styles for careers and technology page
-.careers .btn,
-.technology .btn {
+.btn {
   text-transform: uppercase;
   border: 2px solid $primary-clr;
   background-color: transparent;
@@ -44,6 +43,7 @@ body {
   margin: 2rem 0;
   letter-spacing: 2px;
   font-weight: 500;
+  border-radius: 0.3rem;
   transition: background-color 0.2s ease;
 
   &:hover {

@@ -97,7 +97,7 @@
 }
 
 @include extra-large {
-  .d-flex {
+  .extras .d-flex {
     display: flex;
     gap: 8rem;
   }
