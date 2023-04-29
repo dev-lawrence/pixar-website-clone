@@ -100,6 +100,11 @@ body {
   }
 }
 
+.extras hr,
+.about hr {
+  width: 100%;
+}
+
 .modal {
   height: 100vh;
   .modal-overlay {

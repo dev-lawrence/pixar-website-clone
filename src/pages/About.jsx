@@ -205,6 +205,18 @@ const About = () => {
                   <p>F (510) 922-3151</p>
                 </div>
               </div>
+
+              <hr />
+              <div className="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.609902149685!2d-123.11622668431576!3d49.2827299793301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717d99c1a8a7%3A0x9a383dd87b1aa184!2sStanley%20Park!5e0!3m2!1sen!2sca!4v1620121097528!5m2!1sen!2sca"
+                  width={600}
+                  height={450}
+                  style={{ border: '0', borderRadius: '10px' }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
