@@ -68,25 +68,6 @@
       }
     }
 
-    .bg-text {
-      position: absolute;
-      top: 55%;
-      left: 10rem;
-      transform: translate(-50%, -55%);
-      @include flex(center, center);
-      color: $white;
-      text-transform: uppercase;
-      font-size: 2rem;
-      width: 100%;
-      letter-spacing: 4px;
-
-      @include medium {
-        font-size: 3.188rem;
-        letter-spacing: 6px;
-        left: 50%;
-      }
-    }
-
     .faq {
       background-color: #e6e6e6;
       margin-bottom: 1rem;
@@ -106,6 +87,10 @@
       h3 {
         font-size: 1.2rem;
         font-weight: 800;
+
+        @include extra-small {
+          font-size: 0.8rem;
+        }
 
         @include medium {
           font-size: 1.375rem;

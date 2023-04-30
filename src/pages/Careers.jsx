@@ -37,9 +37,7 @@ const Careers = () => {
         </div>
 
         <div className="career-faqs">
-          <div className="bg-img">
-            <h1 className="bg-text">career faqs</h1>
-          </div>
+          <Hero text="career faqs" />
 
           <div className="container">
             <Accordion />

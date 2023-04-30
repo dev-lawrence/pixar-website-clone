@@ -33,6 +33,14 @@
       border-bottom: 1px solid rgba(29, 29, 29, 0.3);
       transition: color 0.2s ease-in;
 
+      @include small {
+        font-size: 0.9rem;
+      }
+
+      @include extra-small {
+        font-size: 0.8rem;
+      }
+
       &:hover {
         color: $primary-clr;
       }
@@ -45,6 +53,14 @@
     color: rgba(29, 29, 29, 0.8);
     letter-spacing: 3.5px;
     margin-bottom: 2rem;
+
+    @include small {
+      font-size: 0.9rem;
+    }
+
+    @include extra-small {
+      font-size: 0.8rem;
+    }
   }
 
   .footer-btn {
@@ -56,6 +72,15 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    border-radius: 0.3rem;
+
+    @include small {
+      font-size: 0.9rem;
+    }
+
+    @include extra-small {
+      font-size: 0.8rem;
+    }
 
     &:hover {
       background-color: #68b631;
