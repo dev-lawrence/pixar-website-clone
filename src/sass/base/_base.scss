@@ -16,19 +16,16 @@ body {
   @include flex(center, center);
   color: $white;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.3rem;
   width: 100%;
   letter-spacing: 4px;
-
-  @include small {
-    font-size: 1.5rem;
-    padding-left: 0.5rem;
-    line-height: 1.3;
-  }
+  line-height: 1.3;
+  padding-left: 1rem;
 
   @include medium {
     font-size: 3.188rem;
     letter-spacing: 6px;
+    padding-left: 0;
   }
 }
 
