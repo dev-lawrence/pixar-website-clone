@@ -6,11 +6,12 @@
       @include flex(center, space-between);
       gap: 2rem;
       margin-bottom: 3rem;
-    }
 
-    img {
-      width: 304px;
-      height: 203px;
+      img {
+        width: 304px;
+        height: 203px;
+        object-fit: cover;
+      }
     }
 
     .card {
