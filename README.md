@@ -1,7 +1,7 @@
 # Pixar Website Remake
 
 <div align = 'center'>
- <img src="./public/favicon.ico" alt="Pixar Logo"/>
+ <img src="./public/favicon.ico" alt="Pixar Logo" style="width: 100px;"/>
 </div>
 
 ## 📃 About the website
