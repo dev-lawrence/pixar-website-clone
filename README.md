@@ -1,7 +1,7 @@
 # Pixar Website Remake
 
 <div align = 'center'>
- <img src="./client/public/favicon.ico" alt="Pixar Logo"/>
+ <img src="./public/favicon.ico" alt="Pixar Logo"/>
 </div>
 
 ## 📃 About the website
@@ -24,7 +24,7 @@ The Pixar website remake is built using the following technologies:
 
 ## 📸 Screenshot
 
-![Homepage](./client/src/assets/img/pixar.webp)
+![Homepage](./src/assets/img/pixar.webp)
 
 ## 💻 Features
 
