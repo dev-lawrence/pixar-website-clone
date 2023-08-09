@@ -19,7 +19,6 @@ You can visit the live version of the Pixar website remake by clicking the link 
 The Pixar website remake is built using the following technologies:
 
 - React Js
-- TypeScript
 - Sass/SCSS
 
 ## 📸 Screenshot
