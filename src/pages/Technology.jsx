@@ -1,8 +1,7 @@
-import React from 'react';
-import Hero from '../components/Hero';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import TechImageSlider from '../components/TechImageSlider';
+import Hero from '../components/Hero.jsx';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import TechImageSlider from '../components/TechImageSlider.jsx';
 
 const Technology = () => {
   return (

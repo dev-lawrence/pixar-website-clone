@@ -15,34 +15,26 @@ const Accordion = () => {
   };
 
   return (
-    <>
-      <div className="accordion">
-        {FaqData.map((item, index) => (
-          <div
-            key={index}
-            className="faq"
-            onClick={() => handleToggleFaq(index)}
-          >
-            <div className="title">
-              <h3>{item.question}</h3>
-              {selectedFaq === index ? (
-                <FontAwesomeIcon className="icon" icon={faCircleMinus} />
-              ) : (
-                <FontAwesomeIcon className="icon" icon={faCirclePlus} />
-              )}
-            </div>
-
-            <div
-              className={`content ${
-                selectedFaq === index ? 'show' : 'content'
-              }`}
-            >
-              <p>{item.answer}</p>
-            </div>
+    <div className="accordion">
+      {FaqData.map((item, index) => (
+        <div key={index} className="faq" onClick={() => handleToggleFaq(index)}>
+          <div className="title">
+            <h3>{item.question}</h3>
+            {selectedFaq === index ? (
+              <FontAwesomeIcon className="icon" icon={faCircleMinus} />
+            ) : (
+              <FontAwesomeIcon className="icon" icon={faCirclePlus} />
+            )}
           </div>
-        ))}
-      </div>
-    </>
+
+          <div
+            className={`content ${selectedFaq === index ? 'show' : 'content'}`}
+          >
+            <p>{item.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 

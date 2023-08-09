@@ -1,7 +1,7 @@
-import Header from '../components/Header';
+import Header from '../components/Header.jsx';
 import WinLoseLogo from '../assets/img/win-lose-logo.jpg';
 import WinLoseImg from '../assets/img/win-lose-big.jpg';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer.jsx';
 
 const WinLose = () => {
   return (

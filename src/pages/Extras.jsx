@@ -1,6 +1,6 @@
 import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
+import Header from '../components/Header.jsx';
+import Hero from '../components/Hero.jsx';
 import Image1 from '../assets/img/extra-img1.jpg';
 import ExtraSlider from '../components/ExtraSlider';
 

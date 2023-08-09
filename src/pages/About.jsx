@@ -1,6 +1,6 @@
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import Header from '../components/Header.jsx';
+import Hero from '../components/Hero.jsx';
+import Footer from '../components/Footer.jsx';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';

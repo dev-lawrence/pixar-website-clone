@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Card = ({ CardImg, text, path, target }) => {
+const Card = ({ path, target, CardImg, text }) => {
   return (
     <>
       <div className="card">
