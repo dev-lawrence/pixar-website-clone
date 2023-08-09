@@ -1,6 +1,6 @@
 import Footer from '../components/Footer';
-import Header from '../components/Header.jsx';
-import Hero from '../components/Hero.jsx';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
 import { FeatureData } from '../components/FeatureData';
 
 const Feature = () => {

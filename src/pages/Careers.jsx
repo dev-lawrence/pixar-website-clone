@@ -1,10 +1,9 @@
-import React from 'react';
 import Accordion from '../components/Accordion';
-import Header from '../components/Header.jsx';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FollowImg from '../assets/img/follow.jpg';
-import Hero from '../components/Hero.jsx';
-import ImageSlider from '../components/ImageSlider.jsx';
+import Hero from '../components/Hero';
+import ImageSlider from '../components/ImageSlider';
 
 const Careers = () => {
   return (

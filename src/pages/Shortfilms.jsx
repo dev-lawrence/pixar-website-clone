@@ -1,7 +1,7 @@
-import Hero from '../components/Hero.jsx';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
-import { ShortFilmsData } from '../components/ShortFilmsData.jsx';
+import Hero from '../components/Hero';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { ShortFilmsData } from '../components/ShortFilmsData';
 
 const Shortfilms = () => {
   return (
