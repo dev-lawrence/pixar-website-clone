@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
 
-const Card = ({ path, target, CardImg, text }) => {
+interface CardProps {
+  path: string;
+  target?: string;
+  CardImg: string;
+  text: string;
+}
+
+const Card = ({ path, target, CardImg, text }: CardProps) => {
   return (
     <>
       <div className="card">

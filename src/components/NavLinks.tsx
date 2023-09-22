@@ -3,10 +3,10 @@ import { MenuLinks } from './MenuLinks';
 import { Link, NavLink } from 'react-router-dom';
 
 const NavLinks = () => {
-  const [activeMenuIndex, setActiveMenuIndex] = useState(null);
+  const [activeMenuIndex, setActiveMenuIndex] = useState<any>(null);
   const [click, setClick] = useState(false);
 
-  const handleMenuEnter = (index) => {
+  const handleMenuEnter = (index: number) => {
     if (window.innerWidth < 1200) {
       setActiveMenuIndex(null);
     } else {

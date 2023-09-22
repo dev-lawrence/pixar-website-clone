@@ -12,11 +12,12 @@ const ImageSlider = () => {
   const [openModal, setOpenModal] = useState(false);
   const length = CareerGalleryImages.length;
 
-  const handleOpenModal = (index) => {
+  const handleOpenModal = (index: number) => {
     setSlideIndex(index);
     setOpenModal(!openModal);
   };
 
+  // close modal
   const handleCloseModal = () => {
     setOpenModal(!openModal);
   };

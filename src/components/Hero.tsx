@@ -1,4 +1,8 @@
-const Hero = ({ text }) => {
+interface TextProp {
+  text: string;
+}
+
+const Hero = ({ text }: TextProp) => {
   return (
     <>
       <div className="bg-img">
