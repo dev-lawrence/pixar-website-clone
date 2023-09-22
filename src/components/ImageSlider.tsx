@@ -17,6 +17,7 @@ const ImageSlider = () => {
     setOpenModal(!openModal);
   };
 
+  // close modal
   const handleCloseModal = () => {
     setOpenModal(!openModal);
   };
