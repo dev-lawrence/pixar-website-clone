@@ -1,7 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import NavLinks from './NavLinks';
 
-const Navbar = ({ click }) => {
+interface ClickProps {
+  click: boolean;
+}
+
+const Navbar = ({ click }: ClickProps) => {
   return (
     <>
       <nav className={`nav ${click ? 'showMenu' : ''}`}>

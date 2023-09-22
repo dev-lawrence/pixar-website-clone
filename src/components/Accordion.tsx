@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 
 const Accordion = () => {
-  const [selectedFaq, setSelectedFaq] = useState(false);
+  const [selectedFaq, setSelectedFaq] = useState<boolean | any>(false);
 
-  const handleToggleFaq = (index) => {
+  const handleToggleFaq = (index: number) => {
     if (selectedFaq === index) {
-      return setSelectedFaq(null);
+      return setSelectedFaq(false);
     } else {
       setSelectedFaq(index);
     }

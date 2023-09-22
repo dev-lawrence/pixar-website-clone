@@ -12,7 +12,7 @@ const TechImageSlider = () => {
   const [openModal, setOpenModal] = useState(false);
   const length = TechGalleryImages.length;
 
-  const handleOpenModal = (index) => {
+  const handleOpenModal = (index: number) => {
     setSlideIndex(index);
     setOpenModal(!openModal);
   };

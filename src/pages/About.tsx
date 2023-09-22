@@ -178,9 +178,9 @@ const About = () => {
                   <textarea
                     name="message"
                     id="message"
-                    cols="30"
-                    rows="10"
-                    value={formik.values.message}
+                    cols={30}
+                    rows={10}
+                    value={formik.values.message.toString()}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   ></textarea>

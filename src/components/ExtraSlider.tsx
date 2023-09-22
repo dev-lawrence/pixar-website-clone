@@ -12,7 +12,7 @@ const ExtraSlider = () => {
   const [openModal, setOpenModal] = useState(false);
   const length = ExtraGalleryImages.length;
 
-  const handleOpenModal = (index) => {
+  const handleOpenModal = (index: number) => {
     setSlideIndex(index);
     setOpenModal(!openModal);
   };
